@@ -18,16 +18,16 @@ namespace Exercise4
 
     class Stacks
     {
-        Node top;
+        Node adam;
 
         public Stacks()
         {
-            top = null;
+            adam = null;
         }
 
         bool empty()
         {
-            if (top == null)
+            if (adam == null)
                 return (true);
             else
                 return (false);
@@ -37,14 +37,14 @@ namespace Exercise4
             Node fresh;
             fresh = new Node(element, null);
 
-            fresh.next = top;
-            top = fresh;
+            fresh.next = adam;
+            adam = fresh;
             Console.WriteLine("\n" + element + "pushed");
         }
         public void pop()
         {
-            Console.WriteLine("\nThe popped element is: " + top.info);
-            top = top.next; //Make top point to the next node in sequence
+            Console.WriteLine("\nThe popped element is: " + adam.info);
+            adam = adam.next; //Make adam point to the next node in sequence
         }
         public void display()
         {
@@ -54,7 +54,7 @@ namespace Exercise4
             else
             {
                 // Traverse the list from beggining till end
-                for (tmp = top; tmp != null; tmp = tmp.next)
+                for (tmp = adam; tmp != null; tmp = tmp.next)
                 {
                     Console.WriteLine(tmp.info);
                 }
