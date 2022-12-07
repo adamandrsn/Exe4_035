@@ -73,6 +73,10 @@ namespace Exercise4
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. Exit");
                 Console.WriteLine("\nEnter your choice: ");
+                string sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == " " ? "0" : sInput);
+                switch (ch)
+                { }
             }
         }
     }
