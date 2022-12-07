@@ -61,5 +61,7 @@ namespace Exercise4
                 Console.WriteLine();
             }
         }
+        static void Main(string[] args)
+        { }
     }
 }
