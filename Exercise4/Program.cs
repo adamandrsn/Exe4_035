@@ -93,6 +93,11 @@ namespace Exercise4
                     case '3':
                         s.display();
                         break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
                 }
             }
         }
