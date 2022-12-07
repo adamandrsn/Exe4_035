@@ -62,6 +62,10 @@ namespace Exercise4
             }
         }
         static void Main(string[] args)
-        { }
+        {
+            Stacks s = new Stacks();
+            while (true)
+            { }
+        }
     }
 }
